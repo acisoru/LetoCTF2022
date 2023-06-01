@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Auth{% endblock %}
+
+{% block header %}Вход в панель управления{% endblock %}
+
+{% block content %}
+    <div class="row p-5 justify-content-center">
+        <div class="col p-3 shadow-lg border rounded" style="max-width: 500px">
+            <form method="post">
+                <div class="form-floating m-3">
+                    <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                    <label for="floatingEmail">Почта</label>
+                </div>
+                <div class="form-floating m-3">
+                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="password">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <button type="submit" class="btn btn-outline-primary btn-lg m-3">Войти</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
